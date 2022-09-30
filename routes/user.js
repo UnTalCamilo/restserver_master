@@ -19,7 +19,9 @@ router.post('/', [
     check('email').custom(isValidEmail)
 ], userPost);
 
-router.put('/', userPut);
+router.put('/',[
+    
+] ,userPut);
 router.delete('/', userDelete);
 
 module.exports = router;
